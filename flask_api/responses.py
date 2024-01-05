@@ -8,7 +8,9 @@ from flask import Response, url_for, current_app, after_this_request, \
     copy_current_request_context
 from functools import wraps
 from uuid import uuid4
-from .utils.tempfiles import MAX_CLEANUP_TRIES
+# from .utils.tempfiles import MAX_CLEANUP_TRIES
+
+MAX_CLEANUP_TRIES = 5
 
 __all__ = [
     'ApiResult', 'ApiException',
